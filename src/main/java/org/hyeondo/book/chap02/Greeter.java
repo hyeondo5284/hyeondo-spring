@@ -1,4 +1,4 @@
-package org.hyeondo.jdbc.spring;
+package org.hyeondo.book.chap02;
 
 public class Greeter {
 	
