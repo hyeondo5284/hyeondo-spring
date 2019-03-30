@@ -8,8 +8,14 @@ public class MemberRegisterService {
 	private MemberDao memberDao;
 
 	static Logger logger = LogManager.getLogger();
-
+	
+	/*
 	public MemberRegisterService(MemberDao memberDao) {
+		this.memberDao = memberDao;
+	}
+	*/
+	
+	public void setMemberDao(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
 
