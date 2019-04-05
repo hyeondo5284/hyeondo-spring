@@ -7,15 +7,10 @@ public class MemberMain {
 
 	public static void main(String[] args) {
 		
-		/*
-		MemberDao memberDao = new MemberDao();
-		MemberRegisterService regService = new MemberRegisterService(memberDao);
-		*/
 		
-		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"chap03.xml");
-		MemberRegisterService regService = ctx.getBean("memberRegisterService",
-				MemberRegisterService.class);
+		MemberDao memberDao = new MemberDao();
+		MemberRegisterService regService = new MemberRegisterService();
+		regService.setMemberDao(memberDao);
 		
 		RegisterRequest req = new RegisterRequest();
 		req.setEmail("hyeondo5284@daum.net");
