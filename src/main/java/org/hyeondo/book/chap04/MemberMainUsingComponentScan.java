@@ -11,7 +11,7 @@ public class MemberMainUsingComponentScan {
 		
 		RegisterRequest req = new RegisterRequest();
 		req.setEmail("hyeondo5284@daum.net");
-		req.setPassword("1234");
+		req.setPassword("5482");
 		req.setName("hyeondo");
 		
 		regService.regist(req);

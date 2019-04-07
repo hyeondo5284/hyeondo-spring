@@ -1,4 +1,4 @@
-package org.hyeondo.book.chap08;
+package org.hyeondo.book.chap07;
 
 import java.util.List;
 
